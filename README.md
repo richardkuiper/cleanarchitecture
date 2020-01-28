@@ -1,4 +1,4 @@
-# Richard Kuiper - Clean Architecture Example
+# Clean Architecture Example
 
 ## Description
 
