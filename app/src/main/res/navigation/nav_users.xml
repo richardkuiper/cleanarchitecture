@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_users"
+    app:startDestination="@id/topUsersListFragment">
+
+    <!-- Initial Loading screen -->
+    <fragment
+        android:id="@+id/topUsersListFragment"
+        android:name="com.richardkuiper.cleanarchitecture.stackoverflowusers.presentation.list.TopUserListFragment"
+        tools:layout="@layout/fragment_top_user_list" />
+
+    <action
+        android:id="@+id/toTopUserDetailFragment"
+        app:destination="@id/topUserDetailFragment"
+        app:enterAnim="@anim/slide_in_right"
+        app:exitAnim="@anim/slide_out_left"
+        app:popEnterAnim="@anim/slide_in_left"
+        app:popExitAnim="@anim/slide_out_right" />
+    <fragment
+        android:id="@+id/topUserDetailFragment"
+        android:name="com.richardkuiper.cleanarchitecture.stackoverflowusers.presentation.detail.TopUserDetailFragment"
+        tools:layout="@layout/fragment_top_user_detail">
+        <argument
+            android:name="accountId"
+            android:defaultValue="-1"
+            app:argType="integer" />
+    </fragment>
+
+</navigation>

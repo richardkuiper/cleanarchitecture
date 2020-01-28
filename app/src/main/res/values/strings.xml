@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Top Users</string>
+
+    <string name="retrieve_top_users_error">Error retrieving users</string>
+
+    <string name="name">Name:</string>
+    <string name="userType">User Type:</string>
+    <string name="reputation">Reputation:</string>
+    <string name="location">Location:</string>
+    <string name="memberSince">Member Since:</string>
+
+    <string name="userNotFound">User not found!</string>
+    <string name="couldNotRetrieveUsers">Could not retrieve users!</string>
+</resources>
